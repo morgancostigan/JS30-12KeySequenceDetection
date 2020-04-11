@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Key Detection</title>
-  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script> 
 </head>
 <body>
 <script>
@@ -16,7 +16,9 @@
     pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
     if (pressed.join('').includes(secretCode)) {
       console.log('Congrations! You Done It!');
+      cornify_add();  //uses cornify.js that is imported above
     }// end IF
+
     console.log(pressed);
     
   })//end window event listener
